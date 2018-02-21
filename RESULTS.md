@@ -22,3 +22,16 @@ Results are on simplified Arthur model
 | 8 LSTM  | d2 d3                    |  100                 |          |             |         |
 | 9 LSTM  | d1 d2 d3                 |  100                 |          |             |         |
 
+
+small processed wikipedia
+
+| Model |  Target Word | K=1  |  K=2 |
+|:------|-------------:|------:|----:|
+| skipgram | claim  | secondly | stefan |
+| skipgram | policy | hegemony | structural |
+| skipgram | injury | penalties | trophyless |
+| skipgram | worker | arrogant | blacklisting |
+| skipgram | man | duplicator | depravity |
+| skipgram | woman | fertility | adjective |
+| skipgram | cat | orient | worshipers |
+| skipgram | dog | dogs | breed |
