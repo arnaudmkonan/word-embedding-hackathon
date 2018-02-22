@@ -23,7 +23,7 @@ import pandas as pd
 import datetime, time
 import pickle
 
-TRAINING_DATA_PATH = './data_office_jockey.pickle'
+TRAINING_DATA_PATH = './data_construction.pickle'
 
 EMBEDDING_DIR = os.path.join('../..', 'glove.6B')
 EMBEDDING_FILE_NAME = 'glove.6B.100d.txt'
@@ -131,6 +131,24 @@ model_sig.fit(x_train, y_train_enc,
           batch_size=128,
           epochs=3,
           validation_data=(x_val, y_val_enc))
+
+
+
+
+## If additional classes are needed as output:
+# preds = Dense(len(labels[0]), activation='softmax')(x)
+
+# model = Model(sequence_input, preds)
+# model.compile(loss='categorical_crossentropy',
+#               optimizer='rmsprop',
+#               metrics=['acc'])
+
+# model.fit(x_train, y_train,
+#           batch_size=128,
+#           epochs=3,
+#           validation_data=(x_val, y_val))
+
+
 
 
 ## For saving model
